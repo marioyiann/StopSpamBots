@@ -1,0 +1,21 @@
+# Block Spam Bots from Google Analytics
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly.\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.info/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*iloveitaly\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*econom\.co/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*savetubevideo\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*kambasoft\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*simple\-share\-buttons\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*get\-free\-traffic\-now\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*sharebutton\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*4webmasters\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*darodar\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*theguardlan\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*hulfingtonpost\.com/ [NC]
+RewriteRule ^(.*)$ – [F,L]
